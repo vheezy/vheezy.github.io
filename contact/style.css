@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    /*background-color: #111111;*/
+    background-image: url("https://wallpapercave.com/wp/wp2757967.gif");
+    background-size: cover;
+    color: #fff;
+}
+
+.content{
+    margin-top: 10vh;
+    text-align: center;
+
+}
+
+@keyframes glowrgb{
+    0%{
+        box-shadow: 4px 4px 20px hsl(218, 52%, 48%),
+                    4px 4px 40px hsl(218, 52%, 48%);
+    } 25%{
+        box-shadow: 4px 4px 20px hwb(276 23% 27%),
+                    4px 4px 40px hwb(276 23% 27%);
+    } 50%{
+        box-shadow: 4px 4px 20px rgb(186, 59, 133),
+                    4px 4px 40px rgb(186, 59, 133);
+    } 75%{
+        box-shadow: 4px 4px 20px hsl(155, 52%, 48%),
+                    4px 4px 40px hsl(155, 52%, 48%);
+    } 100%{
+        box-shadow: 4px 4px 20px hwb(101 23% 27%),
+                    4px 4px 40px hwb(101 23% 27%);
+    }
+}
+
+.pfp{
+    border-radius: 50vh;
+    box-shadow: 4px 4px 20px #254173,
+                4px 4px 40px #254173;
+    border: none;
+    outline: none;
+} .pfp:hover{
+    animation: glowrgb 2s infinite;
+}
+
+.button-container{
+    padding-bottom: 20px;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0)
+    } 50% {
+        transform: translateY(-10px);
+    } 100% {
+        transform: translateY(0);
+    }
+}
+
+.button{
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    /*background-color: #1e1e1e;*/
+    background-color: #000050;
+    border: 10px #3878B0 #3878B0;
+    outline: none;
+    border-radius: 10px;
+} .button:hover{
+    background-color: #fff;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    animation: bounce 0.5s infinite;
+}
+
+@keyframes titleglow{
+    0%{
+        color: lightblue;
+    } 25% {
+        color: lightcyan;
+    } 50% {
+        color: lightskyblue;
+    } 75% {
+        color: lightslategray;
+    } 100% {
+        color: lightsteelblue;
+    }
+}
+
+.title:hover{
+    cursor: default;
+    animation: titleglow 2s infinite;
+}
